@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  function SayType (value) {
+    if (value === "number" ) {
+      return console.log("its number")
+    } else if (value === "string"); {
+      return console.log("its string");
+    }
+    return "не знаю"
+  }
+
+  SayType(1);
+
+  function runDom (min=0, max=100) {
+    return Math.random() * (max - min) + min;
+  }
+
+   console.log(runDom());
+
+   let star = "";
+
+   for (i=1; i < 7; i++ ){
+       star = star + "*";
+   }
+
+   console.log(star);
+
+let star2 = "";
+
+for (i=1; i < 7; i++ ){
+       star2 = i + "*";
+   }
+
+   for (i=1; i < 7; i++ ){
+       star2 = i + "/n";
+   }
+
+   console.log(star2);
+
+   const array1 = [1,2,3,4,5,6,7,8,9,10];
+   
+
+   for (let i = 0; i < array1.length; i++) {
+    if (i % 2 === 1) {
+      delete array1 [i];
+    }
+
+    console.log(array1);
+    
+  }
+
+  const array2 = [1,2,3,4,5];
+
+   for (let i = 0; i < 10; i++) {
+       array2[i] = i+1;
+       console.log(array2[i]);
+    }
+
+
+
+    ////////////////////////////////////
+
+
+    const array3 = [1,2,3,4,5];
+
+    array3.push(6,7,8,9,10);
+
+    console.log(array3);
+    
+
+    /////////////////////////////////////
+
+    const array4 = [1,2,3];
+
+    array4.join(" && ");
+
+    console.log(array4);
+    //////////////////////////////////////
+
+
+    const array5 = [4,9,16,25,36,49];
+
+    const array6 = array5.map(Math.sqrt);
+
+    console.log(array6);
+    
+    ////////////////////////////////////////
+
+
+    const array7 = [];
+    for (i=0; i < 10; i++){
+    array7.push(Math.random());
+    }
+    console.log(array7);
+    
+    let result = null;
+    
+    if (array7.indexOf(0) > 10 && array7.indexOf(0) < 20) {
+      
+    };
+
+     
+     
+  </script>  
+</html>
